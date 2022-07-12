@@ -9,7 +9,7 @@ public class MergeSorting {
 	        int mid = (beg + end) / 2;  
 	        mergeSort(a, beg, mid);  
 	        mergeSort(a, mid + 1, end);  
-	        merge(a, beg, mid, end);
+	        merge(a, beg, mid, end);  
 	    }  
 	}  
 	
@@ -36,7 +36,7 @@ public class MergeSorting {
 	      
 	    while (i < n1 && j < n2)    
 	    {    
-	        if(LeftArray[i] <= RightArray[j])    
+	        if(LeftArray[i] >= RightArray[j])    
 	        {    
 	            a[k] = LeftArray[i];    
 	            i++;    
